@@ -1,0 +1,40 @@
+.general{
+    font-family: 'Oxygen', sans-serif;
+    padding: 30px;
+    
+        
+    /* background: rgb(238, 69, 64); */
+    background: var(--bg-team);
+            
+}
+
+.contit{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 10px;    
+}
+
+.titulo{
+    color: var(--title-card-service);
+    font-weight: bolder;
+    margin: 10px;
+    
+}
+
+.bortit{
+    border: 5px;
+    border-color:darkgoldenrod;
+    border-style:solid;
+    border-radius: 5%;
+    align-content: center;
+    width: 20em;
+}
+
+.gridp{
+    display:flex;
+    justify-content: center;
+}
+
+.cardh{
+    margin-bottom: 10px;
+}

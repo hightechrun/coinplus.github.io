@@ -1,0 +1,26 @@
+.title__text{
+    font-size: 4rem!important;
+}
+
+.container__img_header img{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-header {
+    color: var(--text-primary);
+}
+
+.contenedor-header .buttonLogin{
+    display: flex!important;
+}
+
+.contenedor-header .buttonLoginMq{
+    display: none!important;
+}
+
+@media (max-width: 768px) {
+    .title__text{
+        font-size: 3rem!important;
+    }
+}

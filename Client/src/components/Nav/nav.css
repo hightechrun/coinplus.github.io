@@ -1,0 +1,246 @@
+.navbar {
+  background: var(--bg-nav);
+  box-shadow: var(--box-shadow-nav);
+  border-bottom: var(--border-bottom-nav);
+  padding: 1rem 3rem!important;
+}
+
+.nav a {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: .5rem 0;
+  color: var(--text-nav);
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-market a{
+  color: var(--text-nav);
+  position: relative;
+  margin: .5rem 0;
+}
+
+.navbar-imge{
+  background: var(--logo-nav);
+  background-size: cover;
+  padding: 2rem;
+  min-width: 150px;
+}
+
+.nav a:hover,
+.nav-market a:hover {
+  color: rgb(15, 157, 223);
+}
+
+.nav a::before,
+.nav-market a::before {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: rgb(15, 157, 223);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.4s ease-out;
+}
+
+.nav-market a::before{
+  height: 3px;
+  bottom: 0;
+}
+
+.nav a:hover::before {
+  width: 100%;
+}
+
+.nav-market a:hover::before {
+  width: 30%;
+}
+
+.nav .active-link::before,
+.nav a.active::before,
+.nav-market a.active::before {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: rgb(15, 157, 223);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.4s ease-out;
+}
+
+.div-lag{
+  padding-left: 1rem;
+}
+
+.nav .active-link,
+.nav a.active,
+.nav-market a.active {
+  color: rgb(15, 157, 223);
+}
+
+.user-nav .profile-nav,
+.user-nav .buttonLogin,
+.user-nav .dark-mode,
+.nav-All .profile-nav,
+.nav-All .dark-mode {
+  display: flex;
+}
+
+.user-nav-2 .profile-nav,
+.user-nav-2 .buttonLogin,
+.user-nav-2 .dark-mode,
+.nav-All-2 .profile-nav,
+.nav-All-2 .dark-mode {
+  display: none;
+}
+
+.user-nav-2,
+.nav-All-2 {
+  display: none;
+}
+
+.img-nav-all{
+  width: 150px;
+}
+
+.btn-navAll{
+  width: 30px!important;
+  height: 30px!important;
+}
+
+.btn-navProfile{
+  background: var(--bg-card-step)!important;
+}
+.nav-togle-user{
+  background: var(--background);
+}
+
+.bg-nav-user{
+  background: var(--bg-nav);
+  color: var(--text-nav);
+}
+
+.serch-contain .form-control{
+  width: 300px!important;
+  margin: 0 !important;
+}
+
+
+
+@media (min-width: 768px) {
+
+  .user-nav .profile-nav,
+  .user-nav .buttonLogin,
+  .user-nav .dark-mode {
+    display: none;
+  }
+
+  .user-nav-2 .profile-nav,
+  .user-nav-2 .buttonLogin,
+  .user-nav-2 .dark-mode {
+    display: flex;
+  }
+
+  .user-nav-2 {
+    display: flex;
+  }
+
+  .nav a {
+    margin: 0 0 0 1rem;
+  }
+}
+
+@media (min-width: 540px) {
+  
+  .nav-All .profile-nav,
+  .nav-All .dark-mode {
+    display: none;
+  }
+
+  .nav-All-2 .profile-nav,
+  .nav-All-2 .dark-mode {
+    display: flex;
+  }
+
+  .nav-All-2 {
+    display: none;
+  }
+}
+
+@media (min-width: 860px) {
+  .nav a {
+    margin: 0 0 0 2rem;
+  }
+}
+@media (max-width: 1068px) {
+  .nav a {
+    margin: 0 0 0 1rem;
+    font-size: .9rem;
+  }
+
+  .navbar {
+    padding: 1rem!important;
+  }
+}
+
+@media (max-width: 844px) {
+  .navbar {
+    padding: 1rem 0!important;
+  }
+  .div-lag button{
+    font-size: .8rem;
+  }
+  
+  .serch-contain .form-control{
+    width: 80%!important;
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav a {
+    margin: .5rem 0 .5rem 0;
+    font-size: 1rem;
+  }
+
+  .nav .active-link::before,
+  .nav a.active::before {
+    width: 0%;
+  }
+
+  .nav a:hover::before {
+    width: 0%;
+  }
+
+  .img-nav-all{
+    width: 80px;
+    height: 80px;
+  }
+
+  .navbar-imge{
+    background: var(--logo-nav);
+    background-size: contain;
+    padding: 2rem 0 0 0;
+    min-width: 75px;
+    height: 100%;
+  }
+
+  .form-control{
+    width: 100%!important;
+  }
+
+
+  .div-lag{
+    padding: 0!important;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .serch-contain .form-control{
+    width: 120px!important;
+  }
+  
+}

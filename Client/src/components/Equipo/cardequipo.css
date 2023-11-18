@@ -1,0 +1,56 @@
+.cardequipo{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    margin: 1em;
+    border: 2px;
+    border-color:darkgoldenrod;
+    border-style:solid;
+    border-radius: 5%;
+}
+
+.cardequipo:hover{
+    box-shadow: 5px 10px 20px 1px rgba(196, 198, 227, 0.673) !important;
+    transition: all 0.3s linear;
+
+}
+
+.cardequipo-body{
+    padding: 10px;
+}
+
+.cardequipo-text{
+    font-size: small;
+    color: rgb(229, 229, 229);
+}
+
+.cardequipo-img-top{
+    width: 70%;
+    border: 2px;
+    border-color:rgba(184, 135, 11, 0.783);
+    border-style:solid;
+    border-radius: 5%;
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+
+.cardequipo-img-top:hover{
+    transform: scale(0.98); 
+}
+
+.imagen{
+    margin-bottom: 10px;
+}
+
+.aequipo{
+    color: rgb(229, 229, 229);
+}
+
+.aequipo:hover{
+    color: cadetblue;
+}
+
+.equipoicon{
+    margin: 8px;
+    height: 20px;
+}
